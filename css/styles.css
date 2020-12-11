@@ -1,0 +1,46 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: whitesmoke;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#juego {
+    background-color: white;
+    float: center;
+    width: 400px;
+    height: 400px;
+}
+
+.cuadro {
+    width: 200px;
+    height: 200px;
+}
+
+#rojo {
+    background-color: red;
+    float: left;
+}
+
+#verde {
+    background-color: green;
+    float: right;
+    margin-top: 0 0 200px 200px;
+}
+
+#azul {
+    background-color: blue;
+    float: left;
+}
+
+#amarillo {
+    background-color: yellow;
+    float: right;
+}
+
+.seleccionado {
+    width: 210px;
+    height: 210px;
+    opacity: 0.5;
+}
