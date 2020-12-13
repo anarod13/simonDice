@@ -1,6 +1,8 @@
 const $colores = document.querySelectorAll(".cuadro");
 let jugadaMaquina = [];
 let jugadaPersona = [];
+let turno = document.querySelector("#turno").innerText;
+
 
 function mostrarColor(color, i) {
     i *= 2000;

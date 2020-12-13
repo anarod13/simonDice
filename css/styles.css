@@ -6,48 +6,64 @@ body {
     margin-right: 25%;
 }
 
-#juego {
+#tablero {
     background-color: white;
     float: center;
-    width: 400px;
-    height: 400px;
+    width: 420px;
+    height: 420px;
 }
 
 .cuadro {
     width: 200px;
     height: 200px;
-    position: static;
+}
+
+#fila-arriba {
+    position: relative;
+    width: 420px;
+    height: 210px;
+    top: 0px;
+}
+
+#fila-abajo {
+    position: relative;
+    width: 420px;
+    height: 210px;
+    bottom: 10px;
 }
 
 #rojo {
     background-color: red;
     float: left;
-    margin-bottom: 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 #verde {
     background-color: green;
+    margin: 0px 0px 0px 10px;
     float: right;
-    margin-bottom: 0px;
 }
 
 #azul {
     background-color: blue;
     float: left;
+    margin: 10px 0px 0px 0px;
 }
 
 #amarillo {
     background-color: yellow;
     float: right;
+    margin: 10px 0px 0px 0px;
 }
 
 .seleccionado {
+    width: 210px;
     height: 210px;
     opacity: 0.5;
 }
 
 #start {
-    margin: 10px;
+    margin: 15px;
     padding: 10px;
     width: 150px;
 }

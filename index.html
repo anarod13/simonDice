@@ -14,18 +14,18 @@
 
     <div>
         <div id="ronda">Puntaje: </div>
-        <div>Record:
+        <div id="record">Record:
         </div>
     </div>
-    <div id="juego">
-        <div>
+    <div id="tablero">
+        <div id="fila-arriba">
             <div class="cuadro" id="rojo">
 
             </div>
             <div class="cuadro" id="verde">
             </div>
         </div>
-        <div>
+        <div id="fila-abajo">
             <div class="cuadro" id="azul">
 
             </div>
@@ -35,9 +35,12 @@
         </div>
 
     </div>
-
+    <div>Turno: <strong id="turno"></strong></div>
     <div>
         <button id="start" name="start">Start!</button> </div>
 
 </body>
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/jugadaMaquina.js"></script>
+<script type="text/javascript" src="js/jugadaPersona.js"></script>
+<script type="text/javascript" src="js/manejoRonda.js"></script>
