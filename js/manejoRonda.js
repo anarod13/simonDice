@@ -3,7 +3,7 @@ document.querySelector("#start").addEventListener('click', iniciarRonda, true);
 function iniciarRonda() {
     reiniciar();
     turno.innerText = "Ahora juega la máquina";
-    return juegaMaquina();
+    return setTimeout(juegaMaquina(), 1000);
 }
 
 function perder() {
