@@ -1,8 +1,9 @@
 const $colores = document.querySelectorAll(".cuadro");
 let jugadaMaquina = [];
 let jugadaPersona = [];
-let puntaje = document.querySelector("#puntaje");
-let ronda = 0;
+let $puntaje = document.querySelector("#puntaje");
+let puntaje;
+
 
 function mostrarColor(color, i) {
     i *= 1500;
@@ -16,13 +17,17 @@ function mostrarColor(color, i) {
 function actualizarTurno(aJugador) {
     let turno = document.querySelector("#turno");
     if (aJugador === "persona") {
-        return turno.innerText = "Ahora es tu turno";
+
+        return setTimeout(function() { turno.innerText = "Ahora es tu turno!"; }, -300);
     }
     if (aJugador === "maquina") {
-        return turno.innerText = "Ahora juega la máquina"
 
+        return setTimeout(function() { turno.innerText = "Ahora juega la máquina"; }, 800)
     }
     if (aJugador === "perdiste") {
         return turno.innerText = "¡Perdiste! Toca start para empezar de vuelta";
+    }
+    if (aJugador === "record") {
+        return turno.innerText = "¡Marcaste un nuevo record!";
     }
 }

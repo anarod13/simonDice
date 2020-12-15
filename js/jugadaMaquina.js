@@ -1,9 +1,9 @@
-function juegaMaquina(ronda) {
+function juegaMaquina() {
     let color = colorAleatorio();
     jugadaMaquina.push(color);
     jugadaMaquina.forEach(function(jugada, i) { mostrarColor(jugada, i) });
     jugadaPersona = [];
-    return setTimeout(actualizarTurno, (ronda * 1500), "persona");
+    return setTimeout(actualizarTurno, (jugadaMaquina.length * 1500), "persona");
 }
 
 function colorAleatorio() {
