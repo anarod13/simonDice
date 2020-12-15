@@ -7,17 +7,16 @@ function juegaPersona(e) {
 
 function verificarJugada() {
     let enCurso = jugadaPersona.length - 1;
-    let jugadaCorrecta = (jugadaPersona[enCurso] === jugadaMaquina[enCurso]); // ver si es posile cambiar despu'es a lastIndex de jugadaPersona
-
+    let jugadaCorrecta = (jugadaPersona[enCurso] === jugadaMaquina[enCurso]);
     if (!jugadaCorrecta) {
         return perder();
     }
     if (jugadaPersona.length === jugadaMaquina.length) {
-        puntaje = jugadaPersona.length;
+        let puntaje = jugadaPersona.length;
         $puntaje.innerText = puntaje;
-        chequearRecord(puntaje);
         actualizarTurno("maquina");
         setTimeout(juegaMaquina, 2000);
         return;
     }
+    return;
 }
