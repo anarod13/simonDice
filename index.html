@@ -13,19 +13,23 @@
     </header>
 
     <div>
-        <div id="ronda">Puntaje: </div>
-        <div>Record:
+        <div class="puntaje-acumulado">Puntaje:
+            <strong id="puntaje">0</strong>
+        </div>
+        <div class="puntaje-record">Record:
+            <strong id="record">0
+                </strong>
         </div>
     </div>
-    <div id="juego">
-        <div>
+    <div id="tablero">
+        <div id="fila-arriba">
             <div class="cuadro" id="rojo">
 
             </div>
             <div class="cuadro" id="verde">
             </div>
         </div>
-        <div>
+        <div id="fila-abajo">
             <div class="cuadro" id="azul">
 
             </div>
@@ -35,9 +39,12 @@
         </div>
 
     </div>
-
+    <div class="turno"> <strong id="turno">Toca Start! para empezar</strong></div>
     <div>
         <button id="start" name="start">Start!</button> </div>
 
 </body>
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/jugadaMaquina.js"></script>
+<script type="text/javascript" src="js/jugadaPersona.js"></script>
+<script type="text/javascript" src="js/manejoRonda.js"></script>
