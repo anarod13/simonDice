@@ -64,7 +64,8 @@ body {
 
 .turno {
     margin-top: 20px;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
 }
 

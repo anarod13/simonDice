@@ -1,7 +1,3 @@
-const tablero = document.querySelector("#tablero");
-
-tablero.addEventListener('click', juegaPersona, true);
-
 function juegaPersona(e) {
 
     mostrarColor(e.target, 0);
@@ -14,7 +10,7 @@ function verificarJugada() {
     let jugadaCorrecta = (jugadaPersona[enCurso] === jugadaMaquina[enCurso]); // ver si es posile cambiar despu'es a lastIndex de jugadaPersona
 
     if (!jugadaCorrecta) {
-        return actualizarTurno("perdiste");
+        return perder();
     }
     if (jugadaPersona.length === jugadaMaquina.length) {
         puntaje = jugadaPersona.length;
@@ -24,14 +20,4 @@ function verificarJugada() {
         setTimeout(juegaMaquina, 2000);
         return;
     }
-}
-
-function chequearRecord(puntaje) {
-    const $record = document.querySelector("#record");
-    let record = Number($record.innerText);
-    if (puntaje > record) {
-        return $record.innerText = puntaje;
-
-    }
-    return;
 }
