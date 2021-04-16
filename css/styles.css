@@ -2,83 +2,69 @@ body {
     font-family: 'Courier New', Courier, monospace;
     background-color: black;
     color: whitesmoke;
-    margin-left: 35%;
-    margin-right: 35%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2% 25% 0% 25%;
 }
 
-.puntaje-acumulado {
-    float: left;
-    width: 45%;
+#puntajes {
     font-size: 1.2em;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2%;
 }
 
 .puntaje-record {
-    float: right;
-    width: 45%;
     text-align: right;
-    font-size: 1.2em;
 }
 
 #tablero {
     background-color: white;
-    float: center;
-    width: 100%;
-    height: 400px;
-    margin-top: 10%;
+    width: 75%;
+    height: 60%;
+    padding: 1.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    align-self: center;
 }
 
 .cuadro {
-    width: 45%;
-    height: 85%;
-}
-
-#fila-arriba {
-    position: relative;
-    width: 100%;
-    height: 50%;
-    top: 10px;
-}
-
-#fila-abajo {
-    position: relative;
-    width: 100%;
-    height: 50%;
+    width: 47%;
+    height: 47%;
 }
 
 #rojo {
     background-color: red;
-    float: left;
-    margin: 0px 0px 0px 10px;
+    align-self: flex-start;
 }
 
 #verde {
     background-color: green;
-    margin: 0px 10px 0px 10px;
-    float: right;
+    align-self: flex-start;
 }
 
 #azul {
     background-color: blue;
-    float: left;
-    margin: 5px 0px 0px 10px;
+    align-self: flex-end;
 }
 
 #amarillo {
     background-color: yellow;
-    float: right;
-    margin: 5px 10px 0px 0px;
+    align-self: flex-end;
 }
 
 .seleccionado {
-    width: 47%;
-    height: 90%;
+    width: 50%;
+    height: 50%;
     opacity: 0.5;
 }
 
 .turno {
-    margin-top: 20px;
-    margin-left: 3.5%;
-    margin-right: 3.5%;
+    margin: 20px 3.5% 0 3.5%;
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
@@ -87,9 +73,10 @@ body {
 }
 
 #start {
-    margin-top: 10px;
+    margin: 10px 20% 0 20%;
     padding: 10px;
-    width: 100%;
+    width: 60%;
+    align-self: center;
 }
 
 .end-game {
